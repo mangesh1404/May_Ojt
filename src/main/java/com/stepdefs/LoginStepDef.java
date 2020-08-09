@@ -24,10 +24,6 @@ public class LoginStepDef {
 			 driver= new ChromeDriver();
 		}
 		
-		@After
-		public void tearDown() {
-			driver.close();
-		}
 		
 		@Given("^user enter \"([^\"]*)\"$")
 		public void user_enter(String url) throws Throwable {
